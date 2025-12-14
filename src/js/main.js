@@ -172,7 +172,7 @@ class Accessibility {
         color: #fff;
         padding: 8px;
         text-decoration: none;
-        z-index: 1000;
+        z-index: 10000;
         border-radius: 4px;
       }
       
