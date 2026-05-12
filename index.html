@@ -35,7 +35,7 @@
 
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/src/css/styles.css">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -183,7 +183,10 @@
             </div>
           </div>
           <div class="relative flex justify-center items-center">
-            <img src="/src/assets/images/bw-sunset-meditation-silhouette.webp" alt="Sarala teaching yoga in a peaceful studio setting" class="rounded-lg shadow-2xl w-80 h-auto" width="600" height="400" loading="eager">
+            <picture>
+              <source type="image/webp" srcset="/src/assets/images/bw-sunset-meditation-silhouette.webp">
+              <img src="/src/assets/images/sunset-meditation-silhouette.jpg" alt="Sarala teaching yoga in a peaceful studio setting" class="rounded-lg shadow-2xl w-80 h-auto" width="600" height="400" loading="eager">
+            </picture>
           </div>
         </div>
       </div>
@@ -256,8 +259,11 @@
       <div class="container">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <img src="/src/assets/images/bw-yoga-lunge-sunset.webp" alt="Sarala, certified yoga instructor, in a peaceful meditation pose" class="rounded-lg shadow-lg w-full h-auto" width="500" height="600"
-              loading="lazy">
+            <picture>
+              <source type="image/webp" srcset="/src/assets/images/bw-yoga-lunge-sunset.webp">
+              <img src="/src/assets/images/yoga-lunge-sunset.jpg" alt="Sarala, certified yoga instructor, in a peaceful meditation pose" class="rounded-lg shadow-lg w-full h-auto" width="500" height="600"
+                loading="lazy">
+            </picture>
           </div>
           <div>
             <h2 id="about-heading" class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">

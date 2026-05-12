@@ -481,7 +481,6 @@ class PerformanceMonitor {
   init() {
     this.monitorPageLoad();
     this.setupLazyLoading();
-    this.optimizeImages();
   }
 
   monitorPageLoad() {
@@ -535,28 +534,6 @@ class PerformanceMonitor {
     }
   }
 
-  optimizeImages() {
-    // Add responsive image support
-    const images = document.querySelectorAll('img');
-    images.forEach(img => {
-      if (!img.hasAttribute('srcset')) {
-        const src = img.src;
-        const webpSrc = src.replace(/\.(jpg|jpeg|png)$/i, '.webp');
-        
-        // Check if WebP is supported
-        if (this.supportsWebP()) {
-          img.src = webpSrc;
-        }
-      }
-    });
-  }
-
-  supportsWebP() {
-    const canvas = document.createElement('canvas');
-    canvas.width = 1;
-    canvas.height = 1;
-    return canvas.toDataURL('image/webp').indexOf('data:image/webp') === 0;
-  }
 }
 
 /**

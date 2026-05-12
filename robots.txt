@@ -9,17 +9,11 @@ Crawl-delay: 1
 
 # Allow specific directories
 Allow: /src/
-Allow: /public/
-Allow: /assets/
 
 # Block unnecessary files
 Disallow: /node_modules/
 Disallow: /.git/
 Disallow: /.github/
-Disallow: /dist/
-Disallow: /*.json$
-Disallow: /*.js$
-Disallow: /*.css$
 Disallow: /*.md$
 
 # Allow important pages
@@ -39,7 +33,6 @@ Disallow: /api/
 
 # Allow search engines to index images
 Allow: /src/assets/images/
-Allow: /public/images/
 
 # Allow CSS and JS for proper rendering
 Allow: /src/css/

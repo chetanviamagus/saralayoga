@@ -1,6 +1,9 @@
 /**
  * Contact form functionality for Sarala Yoga website
  * Handles form validation, submission, and user feedback
+ *
+ * Disabled 2026-05: contact page uses mailto-only; #contact-form is commented out in contact.html.
+ * Re-enable the DOMContentLoaded block below when restoring the form and the contact-form script tag.
  */
 
 class ContactForm {
@@ -395,8 +398,9 @@ class ContactForm {
 }
 
 /**
- * Initialize contact form when DOM is ready
+ * Initialize contact form when DOM is ready (disabled while contact form markup is commented out).
  */
+/*
 document.addEventListener('DOMContentLoaded', () => {
   // Only initialize if we're on a page with a contact form
   if (document.getElementById('contact-form')) {
@@ -406,3 +410,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Export for use in other modules
 window.ContactForm = ContactForm;
+*/

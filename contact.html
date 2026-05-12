@@ -36,7 +36,7 @@
 
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/src/css/styles.css">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -51,7 +51,7 @@
     "@context": "https://schema.org",
     "@type": "ContactPage",
     "name": "Contact Sarala Yoga",
-    "description": "Contact information and booking form for Sarala Yoga professional yoga training services",
+    "description": "Contact information for Sarala Yoga professional yoga training services",
     "mainEntity": {
       "@type": "LocalBusiness",
       "name": "Sarala Yoga",
@@ -233,39 +233,29 @@
     </section>
 
     <!-- Contact Form and Map -->
-    <section class="section bg-gray-50" aria-labelledby="contact-form-heading">
+    <section class="section bg-gray-50">
       <div class="container">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <!-- Contact Form -->
+          <!-- Email contact (form disabled) -->
           <div>
-            <h2 id="contact-form-heading" class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Send Me a Message
-            </h2>
-            <p class="text-lg text-gray-600 mb-8">
-              Have questions about our yoga services? Want to book a session?
-              Fill out the form below and I'll get back to you as soon as possible.
-            </p>
-
+            <!-- Contact form disabled: inquiries via email only -->
+            <!--
             <form id="contact-form" class="space-y-6" novalidate>
-              <!-- Name -->
               <div>
                 <label for="name" class="form-label">Full Name *</label>
                 <input type="text" id="name" name="name" class="form-input" required aria-describedby="name-error" autocomplete="name">
               </div>
 
-              <!-- Email -->
               <div>
                 <label for="email" class="form-label">Email Address *</label>
                 <input type="email" id="email" name="email" class="form-input" required aria-describedby="email-error" autocomplete="email">
               </div>
 
-              <!-- Phone -->
               <div>
                 <label for="phone" class="form-label">Phone Number</label>
                 <input type="tel" id="phone" name="phone" class="form-input" aria-describedby="phone-error" autocomplete="tel">
               </div>
 
-              <!-- Service Interest -->
               <div>
                 <label for="service" class="form-label">Service Interest</label>
                 <select id="service" name="service" class="form-input">
@@ -281,7 +271,6 @@
                 </select>
               </div>
 
-              <!-- Experience Level -->
               <div>
                 <label for="experience" class="form-label">Yoga Experience Level</label>
                 <select id="experience" name="experience" class="form-input">
@@ -294,13 +283,11 @@
                 </select>
               </div>
 
-              <!-- Message -->
               <div>
                 <label for="message" class="form-label">Message *</label>
                 <textarea id="message" name="message" rows="5" class="form-input" required aria-describedby="message-error" placeholder="Tell me about your goals, any specific needs, or questions you have..."></textarea>
               </div>
 
-              <!-- Preferred Contact Method -->
               <div>
                 <fieldset>
                   <legend class="form-label">Preferred Contact Method</legend>
@@ -321,13 +308,36 @@
                 </fieldset>
               </div>
 
-              <!-- Submit Button -->
               <div>
                 <button type="submit" class="btn btn-primary w-full text-lg py-4">
                   Send Message
                 </button>
               </div>
             </form>
+            -->
+
+            <section class="bg-white rounded-lg shadow-lg p-6 lg:p-8 border border-gray-100" aria-labelledby="email-contact-heading">
+              <h2 id="email-contact-heading" class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                Get in touch
+              </h2>
+              <p class="text-lg text-gray-600 mb-4">
+                Sarala Yoga offers personal and group yoga training in Bangalore—including online classes,
+                studio sessions, and therapeutic support. To book or ask a question, send an email with the
+                service you are interested in, your preferred days or times, and anything we should know
+                about injuries, prenatal needs, or experience level.
+              </p>
+              <p class="text-lg text-gray-600 mb-8">
+                <a href="mailto:yogasarala@gmail.com?subject=Inquiry%20from%20saralayoga.in" class="btn btn-primary inline-flex items-center justify-center w-full sm:w-auto text-lg px-8 py-4">
+                  Email Sarala Yoga about classes or booking
+                </a>
+              </p>
+              <p class="text-gray-600">
+                For a quicker reply, you can also call or WhatsApp
+                <a href="tel:+919945400870" class="text-primary-600 hover:text-primary-700 font-medium">+91 9945400870</a>
+                or message
+                <a href="https://wa.me/919945400870" class="text-primary-600 hover:text-primary-700 font-medium">on WhatsApp</a>.
+              </p>
+            </section>
           </div>
 
           <!-- Map and Additional Info -->
@@ -431,7 +441,7 @@
               </summary>
               <div class="mt-4 text-gray-600">
                 You can book your first session by calling me directly at +91 9945400870,
-                sending a WhatsApp message, or filling out the contact form above.
+                sending a WhatsApp message, or emailing using the link in the section above.
                 I&apos;ll discuss your needs and schedule a convenient time.
               </div>
             </details>
@@ -614,8 +624,8 @@
   </footer>
 
   <!-- Scripts -->
-  <script type="module" src="/src/js/main.js"></script>
-  <script type="module" src="/src/js/contact-form.js"></script>
+  <!-- Contact form script disabled while form is commented out (see contact.html). -->
+  <!-- <script type="module" src="/src/js/contact-form.js"></script> -->
 </body>
 
 </html>

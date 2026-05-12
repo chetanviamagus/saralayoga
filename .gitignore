@@ -1,11 +1,5 @@
-# Dependencies
+# Optional: ignore if you ever add local Node tooling
 node_modules/
-package-lock.json
-yarn.lock
-
-# Production build
-dist/
-!dist/styles.css
 
 # System files
 .DS_Store
